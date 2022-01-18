@@ -35,7 +35,6 @@
     </div>
   </nav>
 
-
   <div class="container special">
     <h2 class="h2">Liste des employées</h2>
     <div class="table-responsive">
@@ -56,8 +55,9 @@
             <td><span th:text="${employee.lastName}"> Nom </span></td>
             <td>
               <a th:href="@{/updateEmployee/{id}(id=${employee.id})}"><button class="btn btn-info">Modifier</button></a>
-              <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}"><button
-                  class="btn btn-danger">Supprimer</button></a>
+              <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}">
+                <button class="btn btn-danger">Supprimer</button>
+              </a>
             </td>
           </tr>
         </tbody>

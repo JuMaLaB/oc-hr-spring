@@ -22,7 +22,6 @@ public class EmployeeController {
   public String home(Model model) {
     Iterable<Employee> listEmployee = service.getEmployees();
     model.addAttribute("employees", listEmployee);
-
     return "home";
   }
 
